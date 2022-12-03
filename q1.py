@@ -1,0 +1,21 @@
+calories = []
+
+with open("calories.txt", "r") as f:
+    curCals = []
+    for line in f:
+        if line != "\n":
+            curCals.append(int(line))
+        else:
+            calories.append(curCals)
+            curCals = []
+
+totals = []
+
+for cals in calories:
+    sum = 0
+    for c in cals:
+        sum += c
+
+    totals.append(sum)
+
+print(max(totals))
