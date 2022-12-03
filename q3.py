@@ -6,7 +6,7 @@ def priority(item):
 
 rucksacks = []
 
-with open("rucksacks.txt", "r") as f:
+with open("inputs/rucksacks.txt", "r") as f:
     for line in f:
         items = line[:-1]
         separator = int(len(items) / 2)

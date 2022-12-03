@@ -1,6 +1,6 @@
 calories = []
 
-with open("calories.txt", "r") as f:
+with open("inputs/calories.txt", "r") as f:
     curCals = []
     for line in f:
         if line != "\n":
