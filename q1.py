@@ -18,4 +18,7 @@ for cals in calories:
 
     totals.append(sum)
 
-print(max(totals))
+print("Part 1:", max(totals))
+
+totals.sort(reverse=True)
+print("Part 2:", totals[0] + totals[1] + totals[2])
